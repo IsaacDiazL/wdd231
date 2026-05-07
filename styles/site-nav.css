@@ -1,0 +1,51 @@
+header {
+  display: grid;
+  grid-template-columns: 50px auto 44px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+header button {
+    height: 100%;
+    border: none;
+    font-weight: 700;
+}
+button:hover{
+    background-color: bisque;
+}
+
+nav {
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    color: yellowgreen;
+}
+
+footer {
+    position: absolute;
+    width: 90%;
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+.navigation {
+  display: none;
+}
+.navigation.show {
+  display: block;
+}
+.navigation ul {display: flex;}
