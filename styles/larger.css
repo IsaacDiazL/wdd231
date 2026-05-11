@@ -6,12 +6,18 @@
    .navBar {
     display: flex;
     padding: 0;
-    
-    li {
+   }
+    .navBar li {
         border-radius: 0;
     }
-   }
    .photo img {
     max-width: 400px;
+   }
+   /*Main*/
+   .buttonCert {
+    justify-content: space-evenly ;
+   }
+   .buttonCert button {
+    max-width: 10rem;
    }
 }
