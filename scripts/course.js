@@ -81,8 +81,9 @@ const displayCourse = document.querySelector('#courses');
 const all = document.querySelector('#all');
 const cse = document.querySelector('#cse');
 const wdd = document.querySelector('#wdd');
+const nCourses = document.querySelector('#nCourses');
 
-let index = 1;
+let index = 0;
     for (let i in courses) {
         displayCourse.innerHTML += `
         <span id="${index}">${courses[i].subject} ${courses[i].number}</span>
@@ -92,10 +93,11 @@ let index = 1;
         }
         index ++;
         }
+nCourses.innerHTML = index;
     
 all.addEventListener('click', () => {
     displayCourse.replaceChildren();
-    index = 1;
+    index = 0;
     for (let i in courses) {
         displayCourse.innerHTML += `
         <span id="${index}">${courses[i].subject} ${courses[i].number}</span>
@@ -104,12 +106,13 @@ all.addEventListener('click', () => {
             document.getElementById(index).classList.add('check');
         }
         index ++;
-        }
+    }
+    nCourses.innerHTML = index;
 })
 
 cse.addEventListener('click', () => {
     displayCourse.replaceChildren();
-    index = 1;
+    index = 0;
     const cseList = courses.filter(course => course.subject == 'CSE');
     for (let i in cseList) {
             displayCourse.innerHTML += `
@@ -119,13 +122,14 @@ cse.addEventListener('click', () => {
             document.getElementById(index).classList.add('check');
         }
         index++;
-        }
+    }
+    nCourses.innerHTML = index;
 
 })
 
 wdd.addEventListener('click', () => {
     displayCourse.replaceChildren();
-    index = 1;
+    index = 0;
     const wddList = courses.filter(course => course.subject == 'WDD');
     for (let i in wddList) {
         displayCourse.innerHTML += `
@@ -135,6 +139,7 @@ wdd.addEventListener('click', () => {
             document.getElementById(index).classList.add('check');
         }
         index++;
-        }
+    }
+    nCourses.innerHTML = index;
 })
 

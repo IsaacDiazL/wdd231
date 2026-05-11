@@ -15,7 +15,6 @@ header {
     display: grid;
     grid-template-columns: 64px auto 64px;
     text-align: center;
-    padding: 1rem;
 
     span{
         font-size: 32px;
@@ -24,8 +23,8 @@ header {
 }
 #hanButton {
     border: none;
-    border-radius: 1rem;
-    font-size: 200%;
+    font-size: 2.5rem;
+    justify-content: end;
 }
 #hanButton:hover {
     background-color: rgba(0, 0, 0, 0.2);
@@ -83,7 +82,7 @@ main section {
     text-align: center;
 
     img {
-        width: 50vh;
+        max-width: 70%;
         margin: 1rem;
     }
 }
@@ -94,10 +93,11 @@ main section {
 
     button {
         padding: 1rem;
+        width: 27%;
         border-radius: 1rem;
         border: 1px solid #FF715B;
         color: #FF715B;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
     }
     button:hover {
@@ -120,7 +120,7 @@ main section {
         padding: 1rem;
     }
     span::after {
-        content: '❌';
+        content: '🛠️';
     }
     .check {
         background-color: #5CF64A;
