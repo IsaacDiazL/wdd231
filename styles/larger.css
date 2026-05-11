@@ -14,10 +14,21 @@
     max-width: 400px;
    }
    /*Main*/
-   .buttonCert {
-    justify-content: space-evenly ;
+   main {
+    display: grid;
+    grid-template-columns: 60% 40%;
    }
-   .buttonCert button {
-    max-width: 10rem;
+   main h1 {
+    grid-column: 1/3;
    }
+   main section {
+    margin: 1rem;
+   }
+   .certificate {
+    grid-column: 1/3;
+   }
+   #courses {
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
 }
