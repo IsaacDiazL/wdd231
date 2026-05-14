@@ -12,6 +12,7 @@
     }
    .photo img {
     max-width: 400px;
+    border-radius: 2rem 0 2rem 2rem;
    }
    /*Main*/
    main {

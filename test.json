@@ -1,0 +1,16 @@
+{
+    "familyName": "Diaz Coreas",
+    "dateMoved": 2025,
+    "numberPeople": 2,
+    "isVisited": true,
+    "memberData": [{
+        "name": "Isaac",
+        "gender": "male",
+        "birthdate": "august 16 2001"
+    },
+    {
+        "name": "Nohemy",
+        "gender": "female",
+        "birthdate": "october 29 2002"
+    }]
+}

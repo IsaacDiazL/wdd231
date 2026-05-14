@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+h1, h2 {
+    color: #384B30;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    margin: 1rem;
+    background-color: #DFD4ED;
+}
+#cards section {
+    margin: 0.5rem;
+    background-color: #AFE3C0;
+    padding: 1rem;
+    border: 1px solid #688B58;
+}
+#cards section img {
+    width: 80%;
+    margin: 1rem;
+    height: auto;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+}
