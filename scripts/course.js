@@ -82,64 +82,114 @@ const all = document.querySelector('#all');
 const cse = document.querySelector('#cse');
 const wdd = document.querySelector('#wdd');
 const nCourses = document.querySelector('#nCourses');
-
+const butContenetor = document.querySelector('.buttonCert')
 let index = 0;
-    for (let i in courses) {
-        displayCourse.innerHTML += `
-        <span id="${index}">${courses[i].subject} ${courses[i].number}</span>
-        `;
-        if (courses[i].completed == true) {
-            document.getElementById(index).classList.add('check');
+// this automatized function create span courses and display them on page
+// it also filters array to only display the selected info by course buttons
+
+function getCourses(courses, subject) {
+    displayCourse.replaceChildren();
+    let index = 0;
+    courses.forEach(course => {
+        let card = document.createElement('span');
+
+        card.textContent = `${course.subject}  ${course.number}`;
+        
+        if (subject == course.subject) {
+            if (course.completed) {
+                card.classList.add('check');
+            }
+            displayCourse.appendChild(card);
+             index++;
         }
-        index ++;
+        else if (subject == "") {
+            if (course.completed) {
+                card.classList.add('check');
+            }
+            displayCourse.appendChild(card);
+             index++;
         }
-nCourses.innerHTML = index;
+    }
+    );
+    nCourses.textContent = index;
+}
+//display full list of clases by default
+getCourses(courses, all.value.toUpperCase());
+
+// function to store the value of button, no matter which button clicks,
+// it stores the value on same variable to then. using it as a paremeter
+// on the getCourses() function
+butContenetor.addEventListener('click', (event) => {
+    if (event.target.tagName == "BUTTON") {
+        const getVal = event.target.dataset.val;
+        console.log(getVal);
+        getCourses(courses, getVal.toUpperCase());
+    }
+
+})
+
+
+    /* This is my first proof of code, although is functionable, it was not
+        optimized as it depends of how many statamentes we declare, therefore, if
+        it would have more buttons to filter, then needs to create more statementes */
+
+// let index = 0;
+//     for (let i in courses) {
+//         displayCourse.innerHTML += `
+//         <span id="${index}">${courses[i].subject} ${courses[i].number}</span>
+//         `;
+//         if (courses[i].completed == true) {
+//             document.getElementById(index).classList.add('check');
+//         }
+//         index ++;
+//         }
+// nCourses.innerHTML = index;
     
-all.addEventListener('click', () => {
-    displayCourse.replaceChildren();
-    index = 0;
-    for (let i in courses) {
-        displayCourse.innerHTML += `
-        <span id="${index}">${courses[i].subject} ${courses[i].number}</span>
-        `;
-        if (courses[i].completed == true) {
-            document.getElementById(index).classList.add('check');
-        }
-        index ++;
-    }
-    nCourses.innerHTML = index;
-})
+// all.addEventListener('click', () => {
+//     displayCourse.replaceChildren();
+//     index = 0;
+//     for (let i in courses) {
+//         displayCourse.innerHTML += `
+//         <span id="${index}">${courses[i].subject} ${courses[i].number}</span>
+//         `;
+//         if (courses[i].completed == true) {
+//             document.getElementById(index).classList.add('check');
+//         }
+//         index ++;
+//     }
+//     nCourses.innerHTML = index;
+// })
 
-cse.addEventListener('click', () => {
-    displayCourse.replaceChildren();
-    index = 0;
-    const cseList = courses.filter(course => course.subject == 'CSE');
-    for (let i in cseList) {
-            displayCourse.innerHTML += `
-        <span id="${index}">${cseList[i].subject} ${cseList[i].number}</span>
-        `;
-        if (cseList[i].completed == true) {
-            document.getElementById(index).classList.add('check');
-        }
-        index++;
-    }
-    nCourses.innerHTML = index;
+// cse.addEventListener('click', () => {
+//     displayCourse.replaceChildren();
+//     index = 0;
+//     const cseList = courses.filter(course => course.subject == 'CSE');
+//     for (let i in cseList) {
+//             displayCourse.innerHTML += `
+//         <span id="${index}">${cseList[i].subject} ${cseList[i].number}</span>
+//         `;
+//         if (cseList[i].completed == true) {
+//             document.getElementById(index).classList.add('check');
+//         }
+//         index++;
+//     }
+//     nCourses.innerHTML = index;
 
-})
+// })
 
-wdd.addEventListener('click', () => {
-    displayCourse.replaceChildren();
-    index = 0;
-    const wddList = courses.filter(course => course.subject == 'WDD');
-    for (let i in wddList) {
-        displayCourse.innerHTML += `
-        <span id="${index}">${wddList[i].subject} ${wddList[i].number}</span>
-        `;
-        if (wddList[i].completed == true) {
-            document.getElementById(index).classList.add('check');
-        }
-        index++;
-    }
-    nCourses.innerHTML = index;
-})
+// wdd.addEventListener('click', () => {
+//     displayCourse.replaceChildren();
+//     index = 0;
+//     const wddList = courses.filter(course => course.subject == 'WDD');
+//     for (let i in wddList) {
+//         displayCourse.innerHTML += `
+//         <span id="${index}">${wddList[i].subject} ${wddList[i].number}</span>
+//         `;
+//         if (wddList[i].completed == true) {
+//             document.getElementById(index).classList.add('check');
+//         }
+//         index++;
+//     }
+//     nCourses.innerHTML = index;
+// })
 

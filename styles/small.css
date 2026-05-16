@@ -66,7 +66,8 @@ main {
 }
 main section {
     border-radius: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #ddcfca;
+    border: 1px solid #b9988d;
     overflow: hidden;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
@@ -97,7 +98,7 @@ section h2 {
     width: 30%;
     border-radius: 1rem;
     border: 1px solid #FF715B;
-    color: #FF715B;
+    color: #ee3012;
     font-size: 14px;
     font-weight: 700;
 }

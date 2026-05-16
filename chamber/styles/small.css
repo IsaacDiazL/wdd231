@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*Header and Nav*/
+header {
+    display: grid;
+    grid-template-columns:64px auto 50px 50px;
+    font-weight: 700;
+}
+header img {
+    width: 100%;
+    max-width: 64px;
+}
+Header span {
+    font-size: 1.5rem;
+    align-self: center;
+}
+#hanButton::before {
+    content: '\2261';
+    font-size: 2rem;
+    font-weight: 700;
+}
+#hanButton.show::before {
+    content: 'X';
+}
+.navBar {
+    display: none;
+    grid-column: 1/5;
+}
+.navBar ul {
+    list-style-type: none;
+    text-align: center;
+}
+.navBar ul li {
+    padding: 0.6rem;
+    width: 100%;
+    background-color: #C44536;
+}
+.navBar ul li:hover {
+    background-color: #772E25;
+}
+.navBar ul li a {
+    text-decoration: none;
+    color: #EDDDD4;
+}
+.navBar.show {
+    display: block;
+}
