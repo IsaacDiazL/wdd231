@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Toyota Motor Manufacturing de Baja California",
+            "address": "Carretera Libre, Tecate - Tijuana 33143, El Realito, 22550 Tijuana, B.C.",
+            "phone": "+52 664 969 2800",
+            "url": "https://global.toyota/en/",
+            "img": "https://global.toyota/pages/news/images/2026/05/14/1330/001.jpg",
+            "mebership": "3 (Gold)",
+            "sector": "Automotive sector"
+        },
+        {
+            "name": "MCR Printing and Packaging S.A. de C.V.",
+            "address": "Industrial 321-A, Cd Industrial, 22444 Tijuana, B.C.",
+            "phone": "+52 664 607 2500",
+            "url": "https://www.mcrprintingandpackaging.com/",
+            "img": "https://www.mcrprintingandpackaging.com/hubfs/Images/MCR%20Machinery%2026.jpg",
+            "mebership": "2 (Silver)",
+            "sector": "Packaging and logistics sector"
+        },
+        {
+            "name": "Universal Contact Centers",
+            "address": "Antonio Caso 1910, Zona Urbana Río Tijuana, 22010 Tijuana, B.C.",
+            "phone": "+52 664 972 9368",
+            "url": "https://universalcontactcenters.com/",
+            "img": "https://universalcontactcenters.com/wp-content/uploads/2021/04/pexels-jeshoots-4831-scaled.jpg",
+            "mebership": "1 (Member)",
+            "sector": "Services sector and BPO (Business Process Outsourcing)"
+        },
+        {
+            "name": "Co Production International, Inc",
+            "address": "Corredor Tijuana Rosarito 2000 No. 15202, Interior MT8-10, Col. Zona Cerril General, 22330 Tijuana, B.C.",
+            "phone": "+52 664 454 3330",
+            "url": "https://www.co-production.net/",
+            "img": "https://www.co-production.net/images/2025/07/02/shelter-services4602.png",
+            "mebership": "3 (Gold)",
+            "sector": "Shelter's manufacturing and services sector"
+        },
+        {
+            "name": "Norte Brewing Co.",
+            "address": "C. Salvador Díaz Mirón 4ta. 8178-Interior 5to Piso, Zona Centro, 22000 Tijuana, B.C.",
+            "phone": "+52 664 638 4891",
+            "url": "https://www.nortebrewing.com/",
+            "img": "https://www.nortebrewing.com/cdn/shop/files/square12_360x.jpg?v=1638586339",
+            "mebership": "1 (Member)",
+            "sector": "Food, beverage and tourism sector"
+        },
+        {
+            "name": "Acorn Engineering",
+            "address": "C. Maquiladoras 1387, Cd Industrial, 22444 Tijuana, B.C.",
+            "phone": "+52 664 623 4580",
+            "url": "https://www.acorneng.com/",
+            "img": "https://assets.morrisgroupint.com/assets/446f2f95-a7df-466e-b7cb-d726a118d5b5.webp?v=1765063073403",
+            "mebership": "2 (Silver)",
+            "sector": "Construction and metalworking sector"
+        },
+        {
+            "name": "Sinil Industry",
+            "address": "C. Pacífico 14666, Parque Industrial Pacífico II, 22643 Tijuana, B.C.",
+            "phone": "+52 664 689 9141",
+            "url": "https://www.sinilindustry.com/",
+            "img": "https://static.wixstatic.com/media/dc0b53_115afbe884194acc8adc70c72c7f4603~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_676,h_517,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/dc0b53_115afbe884194acc8adc70c72c7f4603~mv2_d_5184_3456_s_4_2.jpg",
+            "mebership": "1 (Member)",
+            "sector": "Plastics manufacturing sector"
+        }
+    ]
+}

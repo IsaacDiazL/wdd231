@@ -1,8 +1,10 @@
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
     font-size: 16px;
+    font-family: "Mozilla Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /*Header and Nav*/
@@ -19,9 +21,18 @@ Header span {
     font-size: 1.5rem;
     align-self: center;
 }
+#darkMode {
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+}
+#hanButton {
+    border: none;
+    background-color: transparent;
+}
 #hanButton::before {
     content: '\2261';
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 #hanButton.show::before {
@@ -38,15 +49,122 @@ Header span {
 .navBar ul li {
     padding: 0.6rem;
     width: 100%;
-    background-color: #C44536;
+    background-color: #374B4A;
 }
 .navBar ul li:hover {
-    background-color: #772E25;
+    background-color: #526760;
 }
 .navBar ul li a {
     text-decoration: none;
-    color: #EDDDD4;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px black;
 }
 .navBar.show {
     display: block;
+}
+/*Main*/
+#viewlist {
+    display: flex;
+    padding: 1rem;
+    justify-content: end;
+
+}
+#viewlist span button {
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #374B4A;
+    border: 1px solid #374B4A;
+    font-weight: 700;
+    width: 40px;
+}
+#gridview {
+    border-radius: 10px 0 0 10px;
+}
+#listview {
+    border-radius: 0 10px 10px 0;
+}
+#viewlist span button:hover {
+    background-color: #374B4A;
+    color: white;
+
+}
+/* GRID view on page*/
+.gridview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+.gridview section {
+    display: grid;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    
+}
+section .cardtop {
+    text-align: center;
+    background-image: linear-gradient(to right, white, #E1D89F);
+    align-content: center;
+    border-radius: 0 2rem 2rem 0;
+}
+section .cardimg {
+    padding: 1rem;
+    text-align: center;
+}
+section .cardimg img {
+    width: 200px;
+}
+/* LIST view on page*/
+.listview {
+    display: block;
+}
+.listview section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+.listview section:nth-child(even) {
+    background-color: #E1D89F;
+}
+.listview .cardimg {
+    display: none;
+}
+.listview .cardtop {
+    grid-column: 1/2;
+    text-align: left;
+    padding: 1rem;
+    background-image: none;
+}
+.listview .cardinfo {
+    grid-column: 2/3;
+}
+.listview .sectorComp {
+    display: none;
+}
+.listview .phoneComp {
+    display: none;
+}
+.listview .addressComp {
+    display: none;
+}
+/*Footer*/
+footer {
+    background-color: #E1D89F;
+}
+footer div {
+    padding: 1rem;
+    line-height: 1.7;
+}
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social img {
+    overflow: visible;
+}
+.social img:hover {
+    background-color: #88D9E6;
+    border-radius: 50%;
 }

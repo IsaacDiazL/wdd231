@@ -1,3 +1,64 @@
-@media screen and (min-width: 640px){
-    
+@media screen and (min-width: 800px){
+    /*Header*/
+    header {
+        grid-template-columns: 64px auto auto 64px;
+        padding: 0 2rem;
+    }
+    #hanButton {
+        display: none;
+    }
+    #darkMode {
+        grid-column: 4/5;
+    }
+    .navBar {
+        display: block;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        align-content: center;
+    }
+    .navBar ul {
+        display: flex;
+    }
+    .navBar ul li {
+        background-color: transparent;
+    }
+    .navBar ul li:hover {
+    background-color: transparent;
+    }
+    .navBar ul li a{
+        color: black;
+        text-shadow: none;
+        font-size: 18px;
+        padding: 0.1rem;
+    }
+    .navBar ul li a:hover {
+        color: #208897;
+        border-bottom: 3px solid #208897;
+    }
+    /*Main*/
+    .listview section {
+        grid-template-columns: 1fr 1fr 1fr;
+        line-height: 1.5;
+    }
+    .listview .cardinfo {
+        grid-row: 1/2;
+    }
+    .listview .addressComp {
+        display: block;
+    }
+    .listview .phoneComp {
+        display: block;
+    }
+    .listview .cardimg {
+        display: block;
+        grid-column: 3/4;
+    }
+    .listview .cardimg img {
+        width: 150px;
+    }
+    /*Footer*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

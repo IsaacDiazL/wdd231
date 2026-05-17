@@ -9,34 +9,46 @@
     <meta property="og:description" content="Explore Chamber products and services and support for your home or business. Shop.">
     <meta property="og:image" content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default">
     <meta property="og:url" content="https://isaacdiazl.github.io/wdd231/">
-    <title>Chamber Of Commerce | Home page</title>
-    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <title>Chamber Of Commerce | Home page</title>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/membercards.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <img src="images/chamber-logo.webp" alt="Sito Logo" width="64">
         <span>Tijuana Chamber of Comerce</span>
-        <img src="#" alt="Dark mode">
+        <img src="images/contrast-icon.svg" alt="Dark mode" id="darkMode">
         <button id="hanButton"></button>        
         <nav class="navBar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div id="viewlist">
+        <span>
+            <button id="gridview">&#10063;</button>
+            <button id="listview">&#9783;</button>
+        </span>
+        </div>
         <section id="members"></section>
     </main>
     <footer>
         <div>
-            <h3>Tijuana Chamber of Commerce</h3>
+            <p><strong>Tijuana Chamber of Commerce</strong></p>
             <p>Paseo Del Rio 6832, Esq, Cam. Vecinal Oriente Col, <br>
                  3rd Etapa Rio, 22226 Tijuana, B.C. <br>
                 idiazluis@byupathway.edu <br>
@@ -55,7 +67,7 @@
         <div>
             <p>WDD231 Class Project <br>
             Isaac Diaz <br>
-            <span id="currentyear"> Tijuana Chamber of Commerce</span> <br>
+            <span id="currentyear"></span> Tijuana Chamber of Commerce <br>
             Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
