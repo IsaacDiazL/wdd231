@@ -116,7 +116,7 @@ h1 {
     grid-column: 1/3;
 }
 .weathersect, .forecastsect {
-    background-image: url('../images/weatherimg.webp');
+    background-image: url('../images/weatherimage.webp');
     background-size: cover;
     background-position: top;
 }
@@ -126,7 +126,7 @@ h1 {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     margin: 0.5rem;
     justify-self: center;
-
+    backdrop-filter: blur(5px);
 }
 #currentweather{
     display: flex;
@@ -149,6 +149,7 @@ h1 {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     color: white;
     text-shadow: 2px 2px 2px black;
+    backdrop-filter: blur(5px);
 }
 #viewlist {
     display: flex;
