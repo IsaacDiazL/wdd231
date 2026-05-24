@@ -78,6 +78,7 @@ Header span {
     width: 40%;
     padding: 1rem;
     border-left: 10px solid #88D9E6;
+    backdrop-filter: blur(5px);
 }
 .hero div:hover {
     background-color: rgba(0, 0, 0, 0.7);

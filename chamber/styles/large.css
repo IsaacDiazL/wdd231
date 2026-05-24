@@ -63,6 +63,9 @@
     .listview .cardimg img {
         width: 150px;
     }
+    .spotsect {
+        grid-column: 1/4;
+    }
     /*Footer*/
     footer {
         display: grid;
