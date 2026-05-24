@@ -122,9 +122,9 @@ h1 {
     background-position: top;
 }
 #imgweather, #currentweather span {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+ 
     margin: 0.5rem;
     justify-self: center;
     backdrop-filter: blur(5px);
@@ -145,9 +145,9 @@ h1 {
     font-size: 2rem;
     margin: 1rem;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    
     color: white;
     text-shadow: 2px 2px 2px black;
     backdrop-filter: blur(5px);

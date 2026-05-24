@@ -53,7 +53,7 @@ const displayWeather = function getWeather(data) {
     showcurrent.textContent = data.main.temp + '°';
     showdesc.textContent = desc;
     showhigh.innerHTML = `<strong>High:</strong> ${data.main.temp_max}°`;
-    showlow.innerHTML = `<strong>High:</strong> ${data.main.temp_min}°`;
+    showlow.innerHTML = `<strong>Low:</strong> ${data.main.temp_min}°`;
     showhumidity.innerHTML = `<strong>Humidity:</strong> ${data.main.humidity}°`;
 
 
