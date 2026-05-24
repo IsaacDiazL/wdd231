@@ -2,7 +2,7 @@
     /*Header*/
     header {
         grid-template-columns: 64px auto auto 64px;
-        padding: 0 2rem;
+        padding: 2rem;
     }
     #hanButton {
         display: none;
@@ -36,6 +36,13 @@
         border-bottom: 3px solid #208897;
     }
     /*Main*/
+    .hero div a {
+        font-size: 2.2rem;
+    }
+    .homegrid {
+        display: grid;
+        grid-template-columns: 50% 1fr 1fr;
+    }
     .listview section {
         grid-template-columns: 1fr 1fr 1fr;
         line-height: 1.5;

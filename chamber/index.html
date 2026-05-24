@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <title>Chamber Of Commerce | Home</title>
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/membercards.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,24 +39,34 @@
     </header>
     <main>
         <div class="hero">
-            <a href="#">Join Us</a>
+            <picture>
+                <source srcset="images/heroimage-large.webp" media="(min-width: 400px)">
+                <img src="images/heroimage-small.webp" alt="Tijuana city">
+            </picture>
+            <div>
+            <a href="#"> Join Us</a>
+            </div>
         </div>
-        <section class="events">
-
-        </section>
-        <section class="weather">
-
-        </section>
-        <section>
-            
-        </section>
-        <section>
-            
-        </section>
-        <section>
-            
-        </section>
         <h1>Home</h1>
+        <div class="homegrid">
+            <section class="events">
+            <h2>Events</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro adipisci ipsam quasi facilis ex odit laborum at, 
+            amet impedit nostrum? Impedit labore recusandae necessitatibus, magni culpa aliquid voluptatem corrupti nisi.
+            </section>
+            <section class="weathersect">
+                <h2>Current Weather</h2>
+                <img src="#" id="imgweather" alt="#">
+                <div id="currentweather"></div>
+            </section>
+            <section class="forecastsect">
+                <h2>Weather Forecast</h2>
+                <div id="foreweather"></div>
+            </section>
+            <section>
+                <h2>SpotLights</h2>
+            </section>
+        </div>
     </main>
     <footer>
         <div>
