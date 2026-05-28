@@ -83,6 +83,9 @@ const cse = document.querySelector('#cse');
 const wdd = document.querySelector('#wdd');
 const nCourses = document.querySelector('#nCourses');
 const butContenetor = document.querySelector('.buttonCert')
+
+const courseDetails = document.querySelector('#course-details');
+
 let index = 0;
 // this automatized function create span courses and display them on page
 // it also filters array to only display the selected info by course buttons
@@ -91,14 +94,18 @@ function getCourses(courses, subject) {
     displayCourse.replaceChildren();
     let index = 0;
     courses.forEach(course => {
-        let card = document.createElement('span');
+        const card = document.createElement('span');
 
         card.textContent = `${course.subject}  ${course.number}`;
+        
         
         if (subject == course.subject) {
             if (course.completed) {
                 card.classList.add('check');
             }
+            card.addEventListener('click', () => {
+                displayCourseDetails(course);
+            })
             displayCourse.appendChild(card);
              index++;
         }
@@ -106,12 +113,34 @@ function getCourses(courses, subject) {
             if (course.completed) {
                 card.classList.add('check');
             }
+            card.addEventListener('click', () => {
+                displayCourseDetails(course);
+            })
             displayCourse.appendChild(card);
              index++;
         }
+
     }
     );
     nCourses.textContent = index;
+}
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+    
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    })
 }
 //display full list of clases by default
 getCourses(courses, all.value.toUpperCase());
