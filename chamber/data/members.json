@@ -63,5 +63,63 @@
             "mebership": "1 (Member)",
             "sector": "Plastics manufacturing sector"
         }
+    ],
+    "membership": [
+            {
+        "id": 1,
+        "level": "Non Profit Membership level",
+        "badge": "🤝",
+        "price_usd": 250,
+        "billing": "annually",
+        "best_for": "Local freelancers, startups, and new small businesses looking to establish a presence.",
+        "benefits": {
+        "training": "Access to monthly business webinars and quarterly workshops.",
+        "events": "1 free ticket to all regular monthly networking mixers.",
+        "advertising": "Business listing in the Chamber’s online member directory.",
+        "discounts": "10% discount on tickets to the annual City Business Expo."
+        }
+    },
+    {
+        "id": 2,
+        "level": "Bronze Membership level",
+        "badge": "🥉",
+        "price_usd": 550,
+        "billing": "annually",
+        "best_for": "Growing local businesses wanting to expand their network and reach.",
+        "benefits": {
+        "training": "All Bronze benefits plus 2 seats in our Business Accelerator Masterclasses.",
+        "events": "2 free tickets to all mixers and early-bird access to major events.",
+        "advertising": "Featured business listing with logo and social media links in the directory.",
+        "discounts": "25% discount on vendor booths at the annual City Business Expo."
+        }
+    },
+    {
+        "id": 3,
+        "level": "Silver Membership level",
+        "badge": "🥈",
+        "price_usd": 1200,
+        "billing": "annually",
+        "best_for": "Established local companies seeking high visibility and strategic connections.",
+        "benefits": {
+        "training": "Customized team training sessions (up to 5 employees) twice a year.",
+        "events": "VIP access to exclusive Roundtable Dinners with city officials and corporate leaders.",
+        "advertising": "Rotational Spotlight Position on the Chamber’s homepage for high traffic visibility.",
+        "discounts": "1 free premium vendor booth at the annual City Business Expo."
+        }
+    },
+    {
+        "id": 4,
+        "level": "Gold Membership level",
+        "badge": "🥇",
+        "price_usd": 2500,
+        "billing": "annually",
+        "best_for": "Market leaders and top corporations looking to drive community impact and brand prestige.",
+        "benefits": {
+        "training": "Unlimited access to all educational resources, workshops, and certifications.",
+        "events": "A reserved VIP table at the Annual Business Gala and direct input in Chamber committees.",
+        "advertising": "Permanent logo display on the homepage footer, plus 'Main Sponsor' credit for 1 major event.",
+        "discounts": "50% discount on any additional sponsorships or corporate advertising packages."
+        }
+    }
     ]
 }

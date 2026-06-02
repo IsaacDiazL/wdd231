@@ -6,6 +6,7 @@ const listview = document.querySelector('#listview');
 async function getMembersData() {
     const reponse = await fetch(members);
     const data = await reponse.json(reponse);
+    console.log(data);
     displayMembers(data.companies);
 }
 
