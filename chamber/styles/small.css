@@ -388,11 +388,10 @@ form input:required:valid {
     border-radius: 1rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     animation: dialogpop 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
-    &::backdrop{
+}
+#dialogBox::backdrop{
         background: rgba(0, 0, 0, 0.4);
     }
-}
 #dialogBox p {
     text-align: left;
     padding: 1rem;
@@ -415,6 +414,23 @@ form input:required:valid {
 #closeButton:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+#formdata {
+    padding: 1rem;
+    margin: 1rem;
+    justify-self: center ;
+    background-color: #88D9E6;
+    border: 1px solid #526760;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    animation: scale-up-top 1s ease-in-out;
+}
+#formdata a {
+    text-decoration: none;
+    font-weight: 700;
+}
+#formdata a:hover {
+    color: red;
 }
 @keyframes dialogpop {
   0% {

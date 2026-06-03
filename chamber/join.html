@@ -16,7 +16,7 @@
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
-    <script src="scripts/levels.js" defer></script>r
+    <script src="scripts/levels.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
@@ -42,11 +42,11 @@
         <div class="homegrid">
             <section>
                 <h2>Membership Application Form</h2>
-                <form action="index.html" method="get">
+                <form action="thankyou.html" method="get">
                     <fieldset>
                         <legend>Required Information</legend>
                         <label for="fname">First Name</label>
-                            <input type="text" name="fname" id="fname" autocomplete="family-name"
+                            <input type="text" name="fname" id="fname" autocomplete="given-name"
                             title="Must be your first name" required>
                         <label for="lname">Last Name</label>
                             <input type="text" name="lname" id="lname" autocomplete="family-name"
@@ -64,7 +64,7 @@
                             <input type="tel" name="phone" id="phone" 
                             title="Must be your phone number and 10 characters" autocomplete="tel" required>
                         <label for="business">Business/Organization's Name</label>
-                            <input type="text" name="business" id="business" 
+                            <input type="text" name="business" id="business" autocomplete="organization"
                             title="Must be your organization's name" required>
                         </fieldset>
                         <fieldset class="radioedit">
@@ -94,11 +94,11 @@
                                 <legend>Additional Information</legend>
                                 <label for="businessorg">Business/Organization's Description</label>
                                     <textarea name="businessorg" id="businessorg" rows="4"
-                                    placeholder="Chamber of Commerce"></textarea>
-                                <input type="hidden" name="timestamp">
+                                    placeholder="Chamber of Commerce" title="Describe your organization">
+                                    </textarea>
                             </fieldset>
-                            <button type="submit">Join Our Team</button>
-                        </select>
+                            <input type="hidden" name="timestamp" id="timestamp">
+                            <button type="submit" id="submit">Join Our Team</button>
                 </form>
             </section>
             <section class="leveltitle">

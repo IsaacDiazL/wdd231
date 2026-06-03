@@ -6,6 +6,7 @@ const buttongold = document.querySelector('#gold');
 const dialogBox = document.querySelector('#dialogBox');
 const dialogBoxText = document.querySelector('#dialogBox p');
 const closeButton = document.querySelector('#closeButton');
+
 const members = 'data/members.json';
 
 async function getLevelData() {
