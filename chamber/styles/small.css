@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 16px;
     font-family: "Mozilla Text", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -50,10 +49,12 @@ Header span {
 .navBar ul {
     list-style-type: none;
     text-align: center;
+    transition: all 1s;
 }
 .navBar ul li {
     padding: 0.6rem;
     background-color: var(--primary-color);
+    transition: all  0.3s ;
 }
 .navBar ul li:hover {
     background-color: #526760;
@@ -66,7 +67,12 @@ Header span {
 }
 .navBar.show {
     display: block;
-    animation: scale-up-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    height: auto;
+    animation: scale-up-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+}
+#linkcolor {
+    color: #E1D89F;
+    font-size: 1.2rem;
 }
 /*Main*/
 .hero {
@@ -428,6 +434,45 @@ form input:required:valid {
 }
 #formdata a:hover {
     color: red;
+}
+.discoverSection {
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    line-height: 1.5;
+
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "name"
+    "address"
+    "description"
+    "button";
+}
+.discoverSection figure {
+    grid-area: image;
+}
+.discoverSection h2 {
+    padding: 1rem;
+    grid-area: name;
+}
+.discoverSection address {
+    padding: 1rem;
+    grid-area: address;
+}
+.discoverSection p {
+    padding: 1rem;
+    grid-area: description;
+}
+.discoverSection button {
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 200px;
+    border-radius: 1rem;
+    grid-area: button;
+    justify-self: center;
 }
 @keyframes dialogpop {
   0% {
