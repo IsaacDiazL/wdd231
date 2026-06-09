@@ -6,7 +6,7 @@
     --background: #FAF8F5;
     --heading-font: "Playfair Display", serif;
     --general-font: "Montserrat", sans-serif;
-    --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    --box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
     --fade-in-top: fade-in-top 1.5s ease-in both;
 }
 * {
@@ -21,10 +21,57 @@ body {
     font-weight: 400;
     font-style: normal;
     animation: var(--fade-in-top);
+    font-size: 1.1rem;
 }
+/*HEADER*/
 header {
+    display: grid;
+    grid-template-columns: 64px auto 64px;
+    align-items: center;
     background-color: var(--background);
-    padding: 1rem;
+    border-bottom: 10px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+header img {
+    width: 100%;
+}
+header span {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+header div {
+    height: 100%;
+}
+/*Menu Button*/
+#hanbutton {
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    transform: rotate(0);
+    transition: all 0.4s ease;
+}
+#hanbutton::before {
+    content: '\2630';
+}
+#hanbutton.show {
+    transform: rotate(90deg);
+}
+/*Navigation Menu*/
+#navbar {
+    display: none;
+    background-color: var(--primary-color);
+    align-self: self-start;
+    height: 0;
+    transition: height 0.5s ease 1s;
+}
+#navbar.show {
+    display: block;
+    grid-column: 2/4;
+    height: 100%;
 }
 a {
     color: var(--footer-links);
@@ -45,7 +92,6 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--primary-color);
 }
 p, span, ul, a {
-    font-size: 1.1rem;
     padding: 1rem;
 }
 footer {
