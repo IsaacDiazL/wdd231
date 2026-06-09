@@ -104,7 +104,7 @@ Header span {
 .hero div a::before {
     content: '\27A0';
 }
-h1 {
+h1, h2 {
     padding: 1rem;
 }
 .homegrid section {
