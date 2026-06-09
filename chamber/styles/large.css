@@ -83,9 +83,42 @@
         "button button"
     ;
     }
+    .discoverImg {
+        transition: all 0.5s ease;
+    }
+    .discoverImg:hover {
+        transform: rotate(5deg);
+        transform-origin: 0% 0%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 1rem 0;
+    }
     /*Footer*/
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @keyframes jello-animation {
+         0% {
+            transform: scale3d(1, 1, 1);
+        }
+        30% {
+            transform: scale3d(0.75, 1.25, 1);
+        }
+        40% {
+            transform: scale3d(1.25, 0.75, 1);
+        }
+        50% {
+            transform: scale3d(0.85, 1.15, 1);
+        }
+        65% {
+            transform: scale3d(1.05, 0.95, 1);
+        }
+        75% {
+            transform: scale3d(0.95, 1.05, 1);
+        }
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
     }
 }
