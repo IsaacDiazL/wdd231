@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" 
         rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script type="module" src="scripts/main.js"></script>
     <title>Santo Mole | Homepage</title>
 
@@ -28,13 +29,43 @@
         <span>Santo Mole</span>
         <button id="hanbutton"></button>
         <nav id="navbar">
-            <ul>
+            <ul id="navlinks">
+                <li><a href="index.html" id="linkcolor">Home</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#">Home</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/mole-large.webp" media="(min-width: 64rem)">
+                <source srcset="images/puebla-medium.webp" media="(min-width: 40rem)">
+                <img src="images/mole-small.webp" alt="Representation of a mole poblano dish">
+            </picture>
+            <h1>¡SANTO MOLE!</h1>
+            <p>Poblano tradition with heavenly flavor</p>
+            <button>VIEW MENU</button>
+            <button>ORDER NOW</button>
+        </div>
+        <section>
+            <h2>OUR HISTORY</h2>
+            <div id="ourhistory">
+                <img src="images/our-history.webp" alt="Woman stirring mole sauce" width="auto">
+                <p>Legend has it that Puebla’s famous mole was born from divine inspiration 
+                    in the quiet kitchens of colonial convents. At Santo Mole, we honor that 
+                    celestial heritage every single day. Using a secret family recipe passed 
+                    down through generations, we slow-cook our mole with over thirty carefully 
+                    selected ingredients, including rich Mexican chocolate, roasted chilies,
+                    and aromatic spices. Every dish we serve is a tribute to our roots, 
+                    crafted to bring the true, comforting taste of a traditional Poblano home 
+                    straight to your table.</p>
+            </div>
+        </section>
+        <section>
+            <h2>OUR MENU</h2>
+        </section>
+
     <!-- <header>
         <h1>Santo Mole</h1>
         <nav>
