@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 1rem;
     animation: var(--slide-animation) 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s both;
 }
-p, span, a {
+p, span {
     padding: 1rem;
     animation: var(--slide-animation) 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s both;
 }
@@ -56,6 +56,7 @@ header {
     border-bottom: 10px solid var(--primary-color);
     box-shadow: var(--box-shadow);
     animation: var(--fade-animation) 1s ease-in both;
+    overflow: hidden;
 }
 header img {
     width: 100%;
@@ -93,10 +94,11 @@ header div {
     height: 0;
     transform: scaleY(0);
     transform-origin: 100% 0;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
+    overflow: hidden;
 }
 #navbar.show {
-    height: 150px;
+    height: 200px;
     font-size: 1rem;
     transform: scaleY(1);
 }
@@ -108,6 +110,7 @@ header div {
 }
 #navlinks li a {
     display: flex;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
     color: var(--background);
@@ -166,12 +169,21 @@ section {
 #ourhistory img{
     width: 100%;
 }
+/*Footer*/
 footer {
     padding: 1rem;
     background-color: var(--footer-links);
     color: var(--background);
+    line-height: 1.5;
 }
-
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+.social img:active {
+    background-color: var(--cta-buttons);
+    border-radius: 1rem;
+}
 /*Animation*/
 @keyframes fade-in-top {
   0% {

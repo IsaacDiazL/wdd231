@@ -1,0 +1,156 @@
+{
+  "menu": {
+    "appetizers": [
+      {
+        "id": "app_1",
+        "name": "Chalupas Poblanas",
+        "description": "Small, fried corn tortillas lightly topped with shredded pork, finely chopped onions, and a choice of traditional red or green salsa. A classic Puebla street food staple.",
+        "price_usd": 6.50,
+        "price_mxn": 110.00,
+        "image_reference": "chalupas_poblanas.jpg",
+        "section": "Appetizers"
+      },
+      {
+        "id": "app_2",
+        "name": "Molotes",
+        "description": "Crispy, oval-shaped corn masa pastries stuffed with seasoned shredded chicken or potatoes, deep-fried to perfection, and drizzled with Mexican cream and crumbled fresh cheese.",
+        "price_usd": 7.00,
+        "price_mxn": 120.00,
+        "image_reference": "molotes.jpg",
+        "section": "Appetizers"
+      },
+      {
+        "id": "app_3",
+        "name": "Cemita Poblana (Sliders)",
+        "description": "Mini versions of Puebla’s iconic sandwich, made with artisanal sesame-seeded bread, filled with breaded beef milanesa, avocado, quesillo (string cheese), and aromatic pápalo leaves.",
+        "price_usd": 8.50,
+        "price_mxn": 145.00,
+        "image_reference": "cemita_poblana_sliders.jpg",
+        "section": "Appetizers"
+      },
+      {
+        "id": "app_4",
+        "name": "Sopa Poblana",
+        "description": "A comforting, creamy soup made from roasted Poblano peppers, sweet corn kernels, and tender zucchini blossoms, garnished with a touch of panela cheese.",
+        "price_usd": 6.00,
+        "price_mxn": 100.00,
+        "image_reference": "sopa_poblana.jpg",
+        "section": "Appetizers"
+      }
+    ],
+    "main_courses": [
+      {
+        "id": "main_1",
+        "name": "Mole Poblano",
+        "description": "The crown jewel of Puebla. Tender chicken breast smothered in our rich, dark, artisanal mole sauce made from a blend of chilies, nuts, spices, and Mexican chocolate, sprinkled with toasted sesame seeds.",
+        "price_usd": 18.50,
+        "price_mxn": 315.00,
+        "image_reference": "mole_poblano.jpg",
+        "section": "Main Courses"
+      },
+      {
+        "id": "main_2",
+        "name": "Chiles en Nogada",
+        "description": "A majestic Poblano pepper stuffed with a savory-sweet mixture of minced pork, fruits, and nuts, topped with a creamy walnut sauce (nogada) and bright red pomegranate seeds.",
+        "price_usd": 21.00,
+        "price_mxn": 355.00,
+        "image_reference": "chiles_en_nogada.jpg",
+        "section": "Main Courses"
+      },
+      {
+        "id": "main_3",
+        "name": "Pipian Verde",
+        "description": "Succulent pork shoulder simmered in a vibrant, savory green sauce made from toasted pumpkin seeds (pepitas), green tomatoes, chilies, and fresh cilantro.",
+        "price_usd": 16.00,
+        "price_mxn": 270.00,
+        "image_reference": "pipian_verde.jpg",
+        "section": "Main Courses"
+      },
+      {
+        "id": "main_4",
+        "name": "Enmoladas",
+        "description": "Three lightly fried corn tortillas folded and drenched in our signature house mole Poblano, filled with shredded chicken, and topped with fresh onion rings and crumbled cheese.",
+        "price_usd": 14.50,
+        "price_mxn": 245.00,
+        "image_reference": "enmoladas.jpg",
+        "section": "Main Courses"
+      }
+    ],
+    "desserts": [
+      {
+        "id": "dessert_1",
+        "name": "Tortitas de Santa Clara",
+        "description": "Traditional shortbread cookies native to Puebla, featuring a round, dual-textured crust filled with a sweet, smooth glaze made from pepita (pumpkin seed) paste.",
+        "price_usd": 5.00,
+        "price_mxn": 85.00,
+        "image_reference": "tortitas_santa_clara.jpg",
+        "section": "Desserts"
+      },
+      {
+        "id": "dessert_2",
+        "name": "Camotes Poblanos",
+        "description": "Authentic, soft sweet potato candy cylinders flavored with natural extracts of strawberry and vanilla. A historic convent recipe from Puebla.",
+        "price_usd": 4.50,
+        "price_mxn": 75.00,
+        "image_reference": "camotes_poblanos.jpg",
+        "section": "Desserts"
+      },
+      {
+        "id": "dessert_3",
+        "name": "Flan Casero de Vainilla",
+        "description": "A rich, velvety baked custard infused with aromatic Mexican vanilla bean, drenched in a sweet, golden liquid caramel sauce.",
+        "price_usd": 6.00,
+        "price_mxn": 100.00,
+        "image_reference": "flan_vainilla.jpg",
+        "section": "Desserts"
+      },
+      {
+        "id": "dessert_4",
+        "name": "Molletes Poblanos (Dessert Style)",
+        "description": "A seasonal sweet treat consisting of a soft bread filled with custard, glazed with a delicate pink pumpkin seed frosting.",
+        "price_usd": 5.50,
+        "price_mxn": 95.00,
+        "image_reference": "molletes_poblanos_postre.jpg",
+        "section": "Desserts"
+      }
+    ],
+    "drinks": [
+      {
+        "id": "drink_1",
+        "name": "Agua de Chocolate y Menta",
+        "description": "A refreshing, chilled water infused with premium Mexican cacao and fresh mint leaves. A subtle, sweet homage to the flavors of mole.",
+        "price_usd": 4.00,
+        "price_mxn": 70.00,
+        "image_reference": "agua_chocolate_menta.jpg",
+        "section": "Non-Alcoholic Drinks"
+      },
+      {
+        "id": "drink_2",
+        "name": "Horchata con Toque de Nuez",
+        "description": "A traditional, creamy milky rice drink flavored with cinnamon, with a special Puebla twist of finely crushed pecans mixed in.",
+        "price_usd": 4.00,
+        "price_mxn": 70.00,
+        "image_reference": "horchata_nuez.jpg",
+        "section": "Non-Alcoholic Drinks"
+      },
+      {
+        "id": "drink_3",
+        "name": "Agua de Limón con Chía",
+        "description": "Crisp, ice-cold lime water lightly sweetened and packed with hydrated chia seeds for a refreshing, classic Mexican lunchtime experience.",
+        "price_usd": 3.50,
+        "price_mxn": 60.00,
+        "image_reference": "agua_limon_chia.jpg",
+        "section": "Non-Alcoholic Drinks"
+      },
+      {
+        "id": "drink_4",
+        "name": "Café de Olla",
+        "description": "Traditional Mexican aromatic coffee brewed in a clay pot with Mexican cinnamon sticks and piloncillo (unrefined whole cane sugar).",
+        "price_usd": 4.50,
+        "price_mxn": 75.00,
+        "image_reference": "cafe_de_olla.jpg",
+        "section": "Non-Alcoholic Drinks"
+      }
+    ]
+  }
+}
