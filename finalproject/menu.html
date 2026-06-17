@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/menu.js" type="module"></script>
     <title>Santo Mole | Menu</title>
 
 </head>
@@ -39,68 +40,18 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/mole-large.webp" media="(min-width: 64rem)">
-                <source srcset="images/puebla-medium.webp" media="(min-width: 40rem)">
-                <img src="images/mole-small.webp" alt="Representation of a mole poblano dish">
-            </picture>
-            <h1>¡SANTO MOLE!</h1>
-            <p>Poblano tradition with heavenly flavor</p>
-            <button>VIEW MENU</button>
-            <button>ORDER NOW</button>
+        <h1>MENU</h1>
+        <div class="menufilter">
+            <button id="allbutton">All</button>
+            <button id="appbutton">Appetizers</button>
+            <button id="maibutton">Main Course</button>
+            <button id="desbutton">Desserts</button>
+            <button id="dributton">Drinks</button>
         </div>
-        <section>
-            <h2>OUR HISTORY</h2>
-            <div id="ourhistory">
-                <img src="images/our-history.webp" alt="Woman stirring mole sauce" width="auto">
-                <p>Legend has it that Puebla’s famous mole was born from divine inspiration 
-                    in the quiet kitchens of colonial convents. At Santo Mole, we honor that 
-                    celestial heritage every single day. Using a secret family recipe passed 
-                    down through generations, we slow-cook our mole with over thirty carefully 
-                    selected ingredients, including rich Mexican chocolate, roasted chilies,
-                    and aromatic spices. Every dish we serve is a tribute to our roots, 
-                    crafted to bring the true, comforting taste of a traditional Poblano home 
-                    straight to your table.</p>
-            </div>
-        </section>
-        <section>
-            <h2>OUR MENU</h2>
-        </section>
+        <h2 id="menutitle"></h2>
+        <section id="menusection">
 
-    <!-- <header>
-        <h1>Santo Mole</h1>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
-    </header>
-    <main>
-        <ul><li>It is a name with high personality, sticky and easy to remember,
-            it also has a traditional touch that fits with Puebla cuisine 
-        </li></ul>
-        <h1>Site Purpose for Santo Mole</h1>
-        <ul><li>It provides a hub for a regional Puebla cuisine restaurant by listing a 
-            menu with a variety of Puebla traditional dishes along with a
-            reservation form
-        </li></ul>
-        <h1>Scenarios for Santo Mole</h1>
-        <ul><li>Where is it located?</li>
-        <li>What are the prices of the dishes?</li>
-        <li>Do I need to make a reservation or Can I just walk in?
-        </li></ul>
-        <h1>Color Scheme</h1>
-        <ul><li>#3E2723 - For headings</li>
-        <li>#D84315 - Secondary color, for borders and sections </li>
-        <li>#FFB300 - For call to action or important buttons</li>
-        <li>#005A9C - Footer and links</li>
-        <li>#FAF8F5 - General page background and header</li></ul>
-        <h1>Typography</h1>
-        <ul><li>Playfair Display - for Headings</li>
-        <li>Montserrat - for paragraphs, menu and buttons</li></ul> -->
-        <h2>Website WireFrame for Homepage</h2>
-        <img src="images/project-wireframe1.webp" alt="Homepage Wireframe">
-        <h2>Mobile Wireframe for Homepage</h2>
-        <img src="images/project-wireframe-mobile.webp" alt="Mobile Homepage Wireframe">
+        </section>
     </main>
     <footer>
         <div>

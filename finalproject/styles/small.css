@@ -40,6 +40,9 @@ p, span {
     padding: 1rem;
     animation: var(--slide-animation) 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s both;
 }
+img {
+    animation:  var(--slide-animation) 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
 a {
     text-decoration: none;
     font-weight: 700;
@@ -169,12 +172,40 @@ section {
 #ourhistory img{
     width: 100%;
 }
+
+/*Menu section*/ 
+#menusection section {
+    border-left:  10px solid var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 0 1rem 1rem 0;
+    overflow: hidden;
+    display: grid;
+}
+#menusection img {
+    width: 100%;
+}
+.menufilter button {
+    background-color: var(--primary-color);
+    color: var(--background);
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.menufilter button:active {
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--background);
+}
 /*Footer*/
 footer {
     padding: 1rem;
     background-color: var(--footer-links);
     color: var(--background);
     line-height: 1.5;
+}
+footer span {
+    padding: 0;
 }
 .social {
     display: flex;
