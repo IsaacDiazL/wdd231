@@ -13,6 +13,5 @@ const modified = new Date();
 displayyear.innerHTML = `© ${date.getFullYear()}`;
 displaylast.innerHTML = `${modified.toLocaleString('en-US', { dateStyle: 'short', timeStyle: 'short' })}`;
 
-showourmenu.textContent = 'hello world';
 displayButton(hanbutton, navbar);
 ourMenu(menulink, showourmenu);

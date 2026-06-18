@@ -203,8 +203,16 @@ section {
     color: var(--primary-color);
     background-color: var(--background);
 }
-/*Our Menu Section */
-
+/*Did You Know Section*/
+.didyouknow {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.didyouknow::before {
+    content: '\29C8';
+}
 /*Footer*/
 footer {
     padding: 1rem;
