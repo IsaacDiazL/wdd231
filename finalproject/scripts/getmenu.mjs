@@ -17,6 +17,25 @@ export async function getMenu(getdata, container, b1, b2, b3, b4, b5, title) {
     }
 }
 
+export async function ourMenu(getdata, container) {
+    try {
+        const response = await fetch(getdata);
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            mainCourses(data.menu, container);
+        }
+        else {
+            throw Error(await response.text());
+            
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+
 function menuCards(data, container, b1, b2, b3, b4, b5, title) {
     container.replaceChildren();
     title.textContent = 'All';
@@ -55,6 +74,17 @@ function menuCards(data, container, b1, b2, b3, b4, b5, title) {
     })
 }
 
+function mainCourses(data, container) {
+    container.replaceChildren();
+    const menulist = ['appetizers', 'main_courses', 'desserts', 'drinks'];
+    const max = menulist.length;
+    const index = Math.floor(Math.random() * max);
+    const i = menulist[index];
+    console.log(i);
+    menufilter(data[i], container);
+
+}
+
 function menufilter(dataA, containerA) {
     dataA.forEach(menu => {
         const section = document.createElement('section');
@@ -76,4 +106,12 @@ function menufilter(dataA, containerA) {
         section.appendChild(price);
         containerA.appendChild(section);
     });
+}
+
+function getrandommenu() {
+    const menulist = ['appetizers', 'main_courses', 'Desserts', 'Drinks'];
+    const max = menulist.length;
+    const index = Math.floor(Math.random() * max);
+    const result = menulist[index];
+    return result;
 }
