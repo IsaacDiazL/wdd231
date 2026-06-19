@@ -10,7 +10,10 @@ const closebutton = document.querySelector('#closebutton');
 const dialogimage = document.querySelector('#answers img');
 const dialogtitle = document.querySelector('#answers h2');
 const dialogtext = document.querySelector('#answers p');
+const menulink = './data/menu.json';
 
 displayDialog(question1, dialogimage, dialogtext, dialogbox, closebutton, dialogtitle);
 displayDialog(question2, dialogimage, dialogtext, dialogbox, closebutton, dialogtitle);
 displayDialog(question3, dialogimage, dialogtext, dialogbox, closebutton, dialogtitle);
+
+ourMenu(menulink, showourmenu);

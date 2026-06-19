@@ -12,4 +12,3 @@ displayyear.innerHTML = `© ${date.getFullYear()}`;
 displaylast.innerHTML = `${modified.toLocaleString('en-US', { dateStyle: 'short', timeStyle: 'short' })}`;
 
 displayButton(hanbutton, navbar);
-ourMenu(menulink, showourmenu);
