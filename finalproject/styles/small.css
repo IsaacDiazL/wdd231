@@ -7,7 +7,6 @@
     --heading-font: "Playfair Display", serif;
     --general-font: "Montserrat", sans-serif;
     --box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-    --fade-in-top: fade-in-top 1.5s ease-in both;
     --text-shadow: 3px 3px 2px black;
     --slide-animation: slide-right;
     --fade-animation: fade-in-top;
@@ -182,7 +181,7 @@ section {
 #menusection section, #ourmenu section {
     border-left:  10px solid var(--secondary-color);
     box-shadow: var(--box-shadow);
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 2rem 2rem 0;
     overflow: hidden;
     display: grid;
 }
@@ -205,13 +204,55 @@ section {
 }
 /*Did You Know Section*/
 .didyouknow {
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     line-height: 1.5;
     text-align: center;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
 }
 .didyouknow::before {
-    content: '\29C8';
+    content: '\268A';
+}
+.didyouknow:active {
+    filter: invert(1);
+    color: var(--background);
+}
+/*Dialog*/ 
+#answers {
+    align-self: center;
+    margin: auto;
+    border: 3px solid var(--background);
+    border-radius: 1rem;
+    text-align: center;
+    width: 80%;
+    background-color: var(--primary-color);
+    color: var(--background);
+    box-shadow: var(--box-shadow);
+    animation: var(--fade-animation) 0.5s ease;
+}
+#answers::backdrop {
+    background-color: var(--primary-color);
+    opacity: 0.3;
+}
+#answers img {
+    width: 80%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: 5px solid var(--background);
+}
+#answers h2 {
+    color: var(--background);
+}
+#closebutton {
+    position: sticky;
+    top: 5px;
+    z-index: 9999;
+    text-align: end;
+}
+#closebutton::before {
+    content: '\274E';
+    font-size: 2rem;
 }
 /*Footer*/
 footer {
