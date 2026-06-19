@@ -247,6 +247,7 @@ section {
 #closebutton {
     position: sticky;
     top: 5px;
+    padding: 0 5px;
     z-index: 9999;
     text-align: end;
 }

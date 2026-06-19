@@ -27,6 +27,11 @@
     #navlinks li a:active {
         color: var(--background);
     }
+    #linkcolor {
+        backdrop-filter: invert(0);
+        border-bottom: 6px solid var(--secondary-color);
+    }
+    /*Hero Section*/
     .hero {
         position: relative;
         background-color: transparent;
@@ -180,6 +185,6 @@
         transition: all 0.3s ease;
     }
     .social a:hover {
-        filter: invert(1);
+        filter: invert(100%);
     }
 }
